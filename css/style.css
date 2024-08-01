@@ -34,8 +34,7 @@ img {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .container {
@@ -116,8 +115,10 @@ img {
 /* #region box */
 .box {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 .title {
+  max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -125,6 +126,11 @@ img {
   color: #ffffff;
 }
 .button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
   font: inherit;
   background-color: #4d5ae5;
   color: #ffffff;
@@ -153,8 +159,16 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.desc-list {
+  display: flex;
+  gap: 24px;
+}
+.desc-item {
+  width: calc((100% - 72px) / 4);
+}
 
 .desc-subtitle {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -170,7 +184,12 @@ img {
 .team {
   background-color: #f4f4fd;
 }
+.team-list {
+  display: flex;
+  gap: 24px;
+}
 .team-title {
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -178,10 +197,17 @@ img {
   text-transform: capitalize;
   color: #2e2f42;
 }
+.team-name {
+  padding: 32px 0;
+}
 .team-item {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
 .team-subtitle {
+  text-align: center;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -189,13 +215,21 @@ img {
   color: #2e2f42;
 }
 .team-text {
+  text-align: center;
   font-size: 16px;
   letter-spacing: 0.02em;
 }
 /* #endregion team */
 
 /* #region portfolio */
+.portfolio-name {
+  padding: 32px 0;
+}
+.portfolio-list {
+  margin-bottom: 72px;
+}
 .portfolio-title {
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -203,12 +237,24 @@ img {
   text-transform: capitalize;
   color: #2e2f42;
 }
+.portfolio-item {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
 .portfolio-subtitle {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+.portfolio-name {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-text {
   letter-spacing: 0.02em;
@@ -218,12 +264,16 @@ img {
 /* #region footer */
 
 .footer {
+  padding: 100px 0;
   background-color: #2e2f42;
 }
 .logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
   color: #f4f4fd;
 }
 .footer-text {
+  max-width: 264px;
   color: #f4f4fd;
   letter-spacing: 0.02em;
 }
