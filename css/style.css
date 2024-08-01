@@ -5,12 +5,60 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  margin: 0;
 }
-ul {
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* #region header */
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.heder-nav {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -24,7 +72,15 @@ a {
 .logo-span {
   color: #2e2f42;
 }
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 332px;
+}
 .nav-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -33,25 +89,31 @@ a {
 .nav-link:hover {
   color: #404bbf;
 }
+
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 .contacts-list {
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-.contacts-list:focus,
-.contacts-list:hover {
-  color: #404bbf;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .contacts-link {
+  display: block;
+  padding: 24px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #434455;
 }
 .contacts-link:hover,
 .contacts-link:focus {
   color: #404bbf;
 }
+/* #endregion header */
 
+/* #region box */
 .box {
   background-color: #2e2f42;
 }
@@ -63,6 +125,7 @@ a {
   color: #ffffff;
 }
 .button {
+  font: inherit;
   background-color: #4d5ae5;
   color: #ffffff;
   cursor: pointer;
@@ -75,13 +138,22 @@ a {
 .button:focus {
   background-color: #404bbf;
 }
-.desc-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+/* #endregion box */
+
+/* #region desc */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
 .desc-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -92,6 +164,9 @@ a {
 .desc-text {
   letter-spacing: 0.02em;
 }
+/* #endregion desc */
+
+/* #region team */
 .team {
   background-color: #f4f4fd;
 }
@@ -117,6 +192,9 @@ a {
   font-size: 16px;
   letter-spacing: 0.02em;
 }
+/* #endregion team */
+
+/* #region portfolio */
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
@@ -135,6 +213,9 @@ a {
 .portfolio-text {
   letter-spacing: 0.02em;
 }
+/* #endregion portfolio */
+
+/* #region footer */
 
 .footer {
   background-color: #2e2f42;
@@ -146,3 +227,4 @@ a {
   color: #f4f4fd;
   letter-spacing: 0.02em;
 }
+/* #endregion footer */
